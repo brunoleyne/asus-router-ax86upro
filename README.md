@@ -1,3 +1,7 @@
+# ASUS RT-AX86U Pro Router Tweaks
+
+> This repository is a fork of [francoism90/asus-router](https://github.com/francoism90/asus-router) specifically adapted for the ASUS RT-AX86U Pro router model.
+
 # Disclaimer
 
 > Following instructions are provided without any warranty, and may even get you in trouble legally.<br>
@@ -6,20 +10,20 @@
 
 ## Introduction
 
-This repository provides information on how one may possibly enable additional or change WiFi-channels, and TX-power on ASUS provided routers. It also offers some tweaks for AiMesh nodes.
+This repository provides information on how to enable additional or change WiFi-channels, and TX-power on the ASUS RT-AX86U Pro router. It also offers some tweaks for AiMesh nodes if you're using them with this router model.
 
-The purpose is to adjust a router or AP (AiMesh node) to the legal state of the country (e.g. you bought an ASUS router in JAP, and want to re-use again it in GER). The current method is focussing on exposed nvram variables, and overrule them again when a service or event has been restarted or dispatched.
+The purpose is to adjust your router to the legal state of your country (e.g. you bought an ASUS router in one region, and want to re-use it in another). The current method focuses on exposed nvram variables, and overrules them when a service or event has been restarted or dispatched.
 
-Please note adjustments may cause connectivity issues and may have a performance impact. It's advisable to test each value (overwrite), check your routers temps and validate if it actually works for you.
+Please note adjustments may cause connectivity issues and may have a performance impact. It's advisable to test each value (overwrite), check your router's temperatures and validate if it actually works for you.
 
-The adjusted nvram settings have been tested on the ASUS RT-AX58U v1 (Asuswrt-Merlin) & ASUS ZenWiFi AX XT8 v2 (AiMesh node - stock firmware).
+The adjusted nvram settings in this repository have been tested specifically on the ASUS RT-AX86U Pro with Asuswrt-Merlin firmware.
 
 > Note: Please do not ask for any support on the SNBForums, ASUS or any (official) Merlin related projects about these tweaks. See the Troubleshooting section to reset any changes, or remove any adjustments first if you need to ask for support/help.
 
 > Note: Most modern wireless devices use something called Location Aware Regulatory (LAR), and other hidden signals to check the origin of the country.
 > This means that even changing/forcing your router's WiFi-settings, your clients may choose to ignore it (use a fallback-mode) or do not connect at all. See troubleshooting if this happens in your case.
 
-A massive shoutout goes out to the contributes on my previous [gist](https://gist.github.com/francoism90/3dede7973354d067c41bff5e54203fe9/), and members of the [SNBForums](https://www.snbforums.com/) for findings and information about certain parameters.
+A massive shoutout goes out to the contributes on the original [gist](https://gist.github.com/francoism90/3dede7973354d067c41bff5e54203fe9/), and members of the [SNBForums](https://www.snbforums.com/) for findings and information about certain parameters.
 
 ## Getting started
 

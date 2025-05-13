@@ -1,0 +1,2 @@
+# Scripts without extension must use LF
+jffs/scripts/* text eol=lf
